@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ALTAMAR Consultoria | Planejamento Patrimonial para a Saúde</title>
+  <meta name="description" content="Estratégias de planejamento, crédito e construção de patrimônio para médicos, dentistas e gestores de clínicas. Consultoria Oficial Autorizada Ademicon." />
+  
+  <!-- FAVICON -->
+  <link rel="icon" type="image/png" href="../favicon.png" />
+
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Manrope', 'sans-serif']
+          },
+          colors: {
+            primary: '#0F172A',
+            'primary-light': '#1E293B',
+            accent: '#C86A4C',
+            'accent-hover': '#B55A3D',
+            bg: '#FAFAFA',
+            surface: '#FFFFFF',
+            text: '#334155',
+            muted: '#64748B'
+          },
+          boxShadow: {
+            soft: '0 10px 40px -10px rgba(15, 23, 42, 0.08)',
+            float: '0 20px 40px -10px rgba(15, 23, 42, 0.15)'
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    .section-shell {
+      width: 100%;
+      max-width: 80rem;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+    @media (min-width: 1024px) {
+      .section-shell { padding-left: 3rem; padding-right: 3rem; }
+    }
+    details summary::-webkit-details-marker { display: none; }
+  </style>
+</head>
+<body class="bg-bg text-text font-sans antialiased selection:bg-accent selection:text-white">
+
+  <!-- CABEÇALHO -->
+  <header class="fixed inset-x-0 top-0 z-50 bg-surface/80 backdrop-blur-md border-b border-gray-100 transition-all">
+    <div class="section-shell grid h-20 grid-cols-[minmax(0,1fr)_auto] items-center gap-4">
+      
+      <a href="../index.html" class="flex items-center gap-3 group">
+        <img src="../logo.png" alt="ALTAMAR Consultoria" width="40" height="40" class="h-10 w-10 object-contain" />
+        <span class="flex flex-col leading-tight">
+          <span class="font-display text-lg font-extrabold text-primary tracking-wide">ALTAMAR Consultoria</span>
+          <span class="text-[10px] font-semibold tracking-[0.15em] text-muted uppercase">Crédito e Patrimônio</span>
+        </span>
+      </a>
+
+      <nav class="hidden items-center gap-8 lg:flex" aria-label="Navegação principal">
+        <a href="../index.html" class="text-sm font-semibold text-muted hover:text-primary transition-colors flex items-center gap-2">
+          <i data-lucide="arrow-left" class="h-4 w-4"></i> Site Principal
+        </a>
+        <a href="#contato" class="inline-flex items-center justify-center rounded-xl bg-primary px-6 py-2.5 text-sm font-bold text-white hover:bg-primary-light transition-colors shadow-sm">
+          Analisar meu projeto
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- BLOCO 1: HERO -->
+    <section id="hero" class="relative isolate flex min-h-[90svh] items-center overflow-hidden pt-20">
+      <!-- Imagem fixada totalmente à direita -->
+      <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=2070&auto=format&fit=crop" alt="Médica em seu consultório" class="absolute inset-0 -z-20 h-full w-full object-cover object-right md:object-right" />
+      
+      <div aria-hidden="true" class="absolute inset-0 -z-10 bg-gradient-to-t from-primary via-primary/80 to-primary/30 md:bg-gradient-to-r md:from-primary md:via-primary/85 md:to-transparent"></div>
+
+      <div class="section-shell relative w-full pb-20 pt-10 md:pt-0">
+        <div class="max-w-2xl">
+          <p class="text-accent font-bold tracking-widest uppercase text-sm mb-4">Estratégias para Profissionais da Saúde</p>
+          <h1 class="text-[2.5rem] leading-[1.1] font-extrabold text-white sm:text-5xl md:text-[3.5rem] font-display text-balance">
+            Você cuida das pessoas.<br />
+            <span class="text-accent">Nós cuidamos do seu patrimônio.</span>
+          </h1>
+          <p class="mt-6 max-w-xl text-lg leading-relaxed text-gray-100 font-medium md:text-xl drop-shadow-md">
+            Sua renda está diretamente ligada à sua presença e ao seu tempo. O consórcio planejado é a ferramenta inteligente para expandir sua clínica, adquirir equipamentos e construir um futuro sólido, sem comprometer seu capital de giro.
+          </p>
+          
+          <div class="hidden md:flex mt-16 items-center gap-3 text-white/70">
+            <span class="text-xs font-bold uppercase tracking-widest">Descubra como</span>
+            <i data-lucide="arrow-down" class="h-5 w-5"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOCO 2: O DESAFIO DO PROFISSIONAL DA SAÚDE -->
+    <section class="bg-surface py-20 lg:py-32">
+      <div class="section-shell">
+        <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+          
+          <div>
+            <h2 class="text-3xl font-extrabold text-primary md:text-[2.75rem] font-display leading-[1.2]">
+              O desafio de quem vive da própria produtividade.
+            </h2>
+            <p class="mt-6 text-lg leading-relaxed text-text font-medium">
+              Entre atendimentos, gestão de equipe e a busca por atualização constante, sobra pouco tempo para pensar em como fazer o dinheiro conquistado hoje trabalhar pelo seu futuro. A rotina exige muito, e a transição de carreira ou a expansão da clínica demandam capital inteligente.
+            </p>
+            
+            <div class="mt-8 space-y-4">
+              <div class="flex items-start gap-4">
+                <div class="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-accent/10 text-accent"><i data-lucide="clock" class="h-5 w-5"></i></div>
+                <div>
+                  <h4 class="font-bold text-primary text-lg">Se a sua agenda para, a renda também para?</h4>
+                  <p class="text-muted text-sm mt-1">Construir outras fontes de receita (como imóveis para aluguel) é o caminho para a independência.</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-4">
+                <div class="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-accent/10 text-accent"><i data-lucide="building-2" class="h-5 w-5"></i></div>
+                <div>
+                  <h4 class="font-bold text-primary text-lg">Expansão sem sufocar o caixa.</h4>
+                  <p class="text-muted text-sm mt-1">Nova sala, equipamentos de ponta ou uma nova unidade não precisam esvaziar suas reservas.</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-4">
+                <div class="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-accent/10 text-accent"><i data-lucide="trending-up" class="h-5 w-5"></i></div>
+                <div>
+                  <h4 class="font-bold text-primary text-lg">Seu capital pode render mais.</h4>
+                  <p class="text-muted text-sm mt-1">Use seu bom nome e capacidade de poupança para alavancar projetos com custo previsível.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Imagem do Médico Administrador (Imagem Local) -->
+          <div class="relative hidden lg:block">
+            <div class="absolute inset-0 bg-primary rounded-[3rem] -rotate-3 scale-105 opacity-5"></div>
+            <img src="./medico-desafio.jpg" alt="Médico de jaleco branco administrando o consultório no notebook" class="relative rounded-[2rem] shadow-float object-cover w-full h-[500px]" />
+            
+            <div class="absolute -bottom-6 -left-6 bg-surface p-6 rounded-2xl shadow-soft max-w-[300px] border border-gray-100">
+              <p class="text-sm font-medium text-primary leading-relaxed">
+                "O tempo que você leva para decidir é o tempo que seu dinheiro deixa de trabalhar por você."
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOCO 3: OBJETIVOS -->
+    <section class="bg-bg py-20 lg:py-32 border-t border-gray-100">
+      <div class="section-shell">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+          <h2 class="text-3xl font-extrabold text-primary md:text-[2.75rem] font-display">
+            Estratégias para cada fase da sua carreira.
+          </h2>
+          <p class="mt-4 text-lg text-muted">Identifique o seu momento atual e veja como podemos estruturar o caminho.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          <div class="bg-surface p-8 rounded-3xl shadow-sm border border-gray-100 hover:shadow-float transition-all duration-300">
+            <i data-lucide="stethoscope" class="h-8 w-8 text-accent mb-4"></i>
+            <h3 class="text-2xl font-bold text-primary mb-2">Expansão e Estrutura</h3>
+            <p class="text-muted leading-relaxed mb-6">Para quem precisa de capital ágil sem comprometer a operação diária.</p>
+            <ul class="space-y-3">
+              <li class="flex items-center gap-3 text-sm font-medium text-text"><i data-lucide="check" class="h-4 w-4 text-accent"></i> Compra de sala comercial ou consultório</li>
+              <li class="flex items-center gap-3 text-sm font-medium text-text"><i data-lucide="check" class="h-4 w-4 text-accent"></i> Construção ou reforma da clínica</li>
+              <li class="flex items-center gap-3 text-sm font-medium text-text"><i data-lucide="check" class="h-4 w-4 text-accent"></i> Aquisição de equipamentos e tecnologia</li>
+              <li class="flex items-center gap-3 text-sm font-medium text-text"><i data-lucide="check" class="h-4 w-4 text-accent"></i> Veículos e frotas</li>
+            </ul>
+          </div>
+
+          <div class="bg-surface p-8 rounded-3xl shadow-sm border border-gray-100 hover:shadow-float transition-all duration-300">
+            <i data-lucide="landmark" class="h-8 w-8 text-accent mb-4"></i>
+            <h3 class="text-2xl font-bold text-primary mb-2">Patrimônio e Renda</h3>
+            <p class="text-muted leading-relaxed mb-6">Para quem quer parar de depender exclusivamente do próprio esforço físico.</p>
+            <ul class="space-y-3">
+              <li class="flex items-center gap-3 text-sm font-medium text-text"><i data-lucide="check" class="h-4 w-4 text-accent"></i> Aquisição de imóveis para renda de aluguel</li>
+              <li class="flex items-center gap-3 text-sm font-medium text-text"><i data-lucide="check" class="h-4 w-4 text-accent"></i> Garantir tranquilidade para a aposentadoria</li>
+              <li class="flex items-center gap-3 text-sm font-medium text-text"><i data-lucide="check" class="h-4 w-4 text-accent"></i> Quitação de financiamentos bancários caros</li>
+              <li class="flex items-center gap-3 text-sm font-medium text-text"><i data-lucide="check" class="h-4 w-4 text-accent"></i> Diversificação patrimonial</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOCO 4: O MÉTODO MAPA -->
+    <section class="bg-primary py-20 lg:py-32 text-white relative overflow-hidden">
+      <div class="absolute top-0 right-0 w-1/2 h-full bg-primary-light/50 transform -skew-x-12 translate-x-32 hidden lg:block"></div>
+
+      <div class="section-shell relative z-10">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+          <div>
+            <h2 class="text-3xl font-extrabold md:text-[3rem] font-display leading-[1.1]">
+              Como nós trabalhamos.
+            </h2>
+            <p class="mt-6 text-lg text-gray-300 font-medium leading-relaxed">
+              O mercado financeiro é complexo, mas a decisão não precisa ser. Na ALTAMAR, nossa atuação é pautada pela <strong class="text-white">consultoria estratégica e pelo diagnóstico preciso</strong>. Nós mapeamos o seu momento, avaliamos as opções de crédito mais eficientes para o seu perfil e desenhamos um plano sob medida. O objetivo é expandir o seu negócio e construir patrimônio, protegendo o seu capital de giro e garantindo a previsibilidade que a sua carreira exige.
+            </p>
+            
+            <div class="mt-10 p-6 bg-white/5 rounded-2xl border border-white/10">
+              <p class="text-accent font-bold mb-2 flex items-center gap-2">
+                <i data-lucide="shield-check" class="h-5 w-5"></i> Atendimento consultivo e transparente.
+              </p>
+              <p class="text-sm text-gray-300 leading-relaxed">O serviço da ALTAMAR não tem custo para você. Somos remunerados diretamente pela Ademicon. O contrato e os pagamentos são feitos com a administradora, com toda a segurança e fiscalização do Banco Central.</p>
+            </div>
+          </div>
+
+          <div class="space-y-8">
+            <div class="flex gap-6">
+              <span class="text-4xl font-display font-extrabold text-accent/50">M</span>
+              <div>
+                <h3 class="text-xl font-bold text-white">Mapear</h3>
+                <p class="text-sm text-gray-400 mt-1">Entender sua realidade financeira e seus objetivos de carreira.</p>
+              </div>
+            </div>
+            <div class="flex gap-6">
+              <span class="text-4xl font-display font-extrabold text-accent/50">A</span>
+              <div>
+                <h3 class="text-xl font-bold text-white">Analisar opções</h3>
+                <p class="text-sm text-gray-400 mt-1">Comparar custos, prazos e o impacto real no seu fluxo de caixa.</p>
+              </div>
+            </div>
+            <div class="flex gap-6">
+              <span class="text-4xl font-display font-extrabold text-accent/50">P</span>
+              <div>
+                <h3 class="text-xl font-bold text-white">Planejar a estratégia</h3>
+                <p class="text-sm text-gray-400 mt-1">Definir o plano ideal, lances e valores que caibam no seu orçamento.</p>
+              </div>
+            </div>
+            <div class="flex gap-6">
+              <span class="text-4xl font-display font-extrabold text-accent/50">A</span>
+              <div>
+                <h3 class="text-xl font-bold text-white">Acompanhar</h3>
+                <p class="text-sm text-gray-400 mt-1">Gestão de assembleias, boletos e suporte até a contemplação.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOCO 5: PROVA SOCIAL E FAQ -->
+    <section class="bg-surface py-20 lg:py-32">
+      <div class="section-shell">
+        <div class="grid lg:grid-cols-2 gap-16 max-w-6xl mx-auto">
+          
+          <div>
+            <!-- Ajuste de espaçamento entre linhas (leading-[1.2]) aplicado aqui -->
+            <h2 class="text-3xl font-extrabold text-primary md:text-[2.5rem] font-display mb-8 leading-[1.2]">
+              Quem já planeja o futuro com a ALTAMAR
+            </h2>
+            <div class="space-y-6">
+              <div class="p-6 bg-bg rounded-2xl border border-gray-100">
+                <p class="text-lg text-text leading-relaxed font-medium italic">"Muitos profissionais da saúde chegam até nós com receio de comprometer o capital de giro da clínica. O nosso papel é mostrar que é possível investir em novos equipamentos ou imóveis com parcelas que respeitam o fluxo de caixa da operação."</p>
+                <p class="mt-4 text-sm font-bold text-primary">— Consultoria ALTAMAR</p>
+              </div>
+              
+              <ul class="space-y-4 pt-4">
+                <li class="flex items-center gap-3 text-text"><i data-lucide="check-circle-2" class="h-5 w-5 text-accent"></i> Médicos construindo patrimônio para a aposentadoria.</li>
+                <li class="flex items-center gap-3 text-text"><i data-lucide="check-circle-2" class="h-5 w-5 text-accent"></i> Dentistas expandindo consultórios com equipamentos modernos.</li>
+                <li class="flex items-center gap-3 text-text"><i data-lucide="check-circle-2" class="h-5 w-5 text-accent"></i> Gestores investindo em imóveis comerciais para locação.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div>
+            <h2 class="text-2xl font-extrabold text-primary font-display mb-6 leading-[1.2]">Perguntas Frequentes</h2>
+            <div class="space-y-4">
+              <details class="group bg-bg rounded-2xl p-5 hover:bg-gray-50 transition-colors">
+                <summary class="flex cursor-pointer items-center justify-between font-bold text-primary outline-none">
+                  O consórcio faz sentido para quem já tem dinheiro investido?
+                  <i data-lucide="plus" class="h-5 w-5 text-accent group-open:hidden"></i>
+                  <i data-lucide="minus" class="hidden h-5 w-5 text-accent group-open:block"></i>
+                </summary>
+                <p class="mt-4 text-muted text-sm leading-relaxed">Sim. Uma das estratégias é usar o consórcio para alavancar patrimônio, mantendo o seu capital investido rendendo. Você usa uma parcela do rendimento para pagar a parcela do consórcio, sem descapitalizar.</p>
+              </details>
+              
+              <details class="group bg-bg rounded-2xl p-5 hover:bg-gray-50 transition-colors">
+                <summary class="flex cursor-pointer items-center justify-between font-bold text-primary outline-none">
+                  Posso usar para comprar equipamentos para a clínica?
+                  <i data-lucide="plus" class="h-5 w-5 text-accent group-open:hidden"></i>
+                  <i data-lucide="minus" class="hidden h-5 w-5 text-accent group-open:block"></i>
+                </summary>
+                <p class="mt-4 text-muted text-sm leading-relaxed">Sim. Existem modalidades de consórcio para bens móveis que permitem a compra de equipamentos, máquinas e veículos de forma planejada e sem juros.</p>
+              </details>
+
+              <details class="group bg-bg rounded-2xl p-5 hover:bg-gray-50 transition-colors">
+                <summary class="flex cursor-pointer items-center justify-between font-bold text-primary outline-none">
+                  A ALTAMAR cobra pela consultoria?
+                  <i data-lucide="plus" class="h-5 w-5 text-accent group-open:hidden"></i>
+                  <i data-lucide="minus" class="hidden h-5 w-5 text-accent group-open:block"></i>
+                </summary>
+                <p class="mt-4 text-muted text-sm leading-relaxed">Não. Nosso serviço de consultoria e acompanhamento é gratuito para o cliente. Somos remunerados pela Ademicon.</p>
+              </details>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOCO 6: CTA FINAL -->
+    <section id="contato" class="bg-primary py-20 lg:py-32">
+      <div class="section-shell">
+        <div class="grid lg:grid-cols-[1fr_450px] gap-16 max-w-6xl mx-auto items-center">
+          
+          <div>
+            <h2 class="text-3xl font-extrabold text-white md:text-[2.75rem] font-display leading-[1.2]">
+              Vamos analisar o seu projeto?
+            </h2>
+            <p class="mt-6 text-lg text-gray-300 leading-relaxed font-medium">
+              Em uma conversa de aproximadamente 30 minutos, entendemos o seu momento e desenhamos o plano que faz sentido para a sua carreira e para o seu patrimônio.
+              <br><br>
+              <span class="text-white font-bold bg-white/10 py-1 px-3 rounded-lg">Sem custo e sem compromisso.</span>
+            </p>
+          </div>
+
+          <div class="bg-surface p-8 rounded-3xl shadow-float">
+            <h3 class="text-2xl font-bold text-primary mb-6 font-display">Dê o primeiro passo</h3>
+            
+            <form id="leadForm" class="space-y-5">
+              <div>
+                <label for="nome" class="block text-sm font-bold text-primary mb-1">Seu nome</label>
+                <input type="text" id="nome" required placeholder="Como podemos te chamar?" class="w-full h-12 px-4 rounded-xl border border-gray-200 bg-bg focus:outline-none focus:ring-2 focus:ring-accent/50 focus:border-accent transition-all" />
+              </div>
+              
+              <div>
+                <label for="whatsapp" class="block text-sm font-bold text-primary mb-1">Seu WhatsApp</label>
+                <input type="tel" id="whatsapp" required placeholder="(11) 90000-0000" class="w-full h-12 px-4 rounded-xl border border-gray-200 bg-bg focus:outline-none focus:ring-2 focus:ring-accent/50 focus:border-accent transition-all" />
+              </div>
+
+              <div>
+                <label for="objetivo" class="block text-sm font-bold text-primary mb-1">Seu principal objetivo</label>
+                <select id="objetivo" required class="w-full h-12 px-4 rounded-xl border border-gray-200 bg-bg focus:outline-none focus:ring-2 focus:ring-accent/50 focus:border-accent transition-all text-text">
+                  <option value="" disabled selected>Selecione uma opção</option>
+                  <option value="Expandir a clínica">Expandir a clínica</option>
+                  <option value="Comprar equipamentos">Comprar equipamentos</option>
+                  <option value="Investir em imóveis para renda">Investir em imóveis para renda</option>
+                  <option value="Planejar a aposentadoria">Planejar a aposentadoria</option>
+                  <option value="Quitar financiamentos">Quitar financiamentos</option>
+                  <option value="Outro objetivo">Outro objetivo</option>
+                </select>
+              </div>
+
+              <button type="submit" id="btnSubmit" class="w-full h-14 mt-2 rounded-xl bg-accent text-white font-bold text-lg hover:bg-accent-hover transition-transform hover:-translate-y-1 shadow-lg shadow-accent/20 flex items-center justify-center gap-2">
+                <i data-lucide="message-circle" class="h-5 w-5"></i>
+                Analisar meu projeto
+              </button>
+              
+              <p class="text-xs text-center text-muted mt-2">
+                Ao enviar, você será redirecionado para o nosso WhatsApp.
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer class="bg-primary-light border-t border-white/5 py-12">
+    <div class="section-shell flex flex-col md:flex-row justify-between items-center gap-8">
+      <a href="../index.html" class="flex items-center gap-3">
+        <img src="../logo.png" alt="ALTAMAR" width="32" height="32" class="h-8 w-8 object-contain brightness-0 invert" />
+        <span class="text-sm font-bold text-white">ALTAMAR Consultoria</span>
+      </a>
+      <p class="text-xs text-gray-400 text-center md:text-right max-w-2xl leading-relaxed">
+        <strong>Aviso de Conformidade Legal:</strong> A ALTAMAR atua na prestação de serviços de consultoria e planejamento de crédito como canal credenciado e consultoria autorizada Ademicon Administradora de Consórcios S.A. As operações e grupos de consórcio são de responsabilidade e custódia da Ademicon, instituição autorizada e fiscalizada pelo Banco Central do Brasil.
+        <br><br>
+        &copy; 2026 Altamar Consultoria em Negócios e Tecnologia Ltda. Todos os direitos reservados.
+      </p>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script>
+    lucide.createIcons();
+
+    document.getElementById('whatsapp').addEventListener('input', function(e) {
+      let x = e.target.value.replace(/\D/g, '').match(/(\d{0,2})(\d{0,5})(\d{0,4})/);
+      e.target.value = !x[2] ? x[1] : '(' + x[1] + ') ' + x[2] + (x[3] ? '-' + x[3] : '');
+    });
+
+    document.getElementById('leadForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      const btn = document.getElementById('btnSubmit');
+      const originalText = btn.innerHTML;
+      
+      const nome = document.getElementById('nome').value;
+      const whatsapp = document.getElementById('whatsapp').value;
+      const objetivo = document.getElementById('objetivo').value;
+
+      btn.innerHTML = '<i data-lucide="loader-2" class="h-5 w-5 animate-spin"></i> Preparando...';
+      btn.disabled = true;
+      lucide.createIcons();
+
+      fetch("https://formsubmit.co/ajax/contato@altamarconsultoria.com.br", {
+        method: "POST",
+        headers: { 
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          Nome: nome,
+          WhatsApp: whatsapp,
+          Objetivo: objetivo,
+          _subject: `🟢 Novo Lead (Saúde): ${nome}`
+        })
+      })
+      .then(() => {
+        const textoMensagem = `Olá! Meu nome é ${nome}. Sou profissional da saúde, vi a página da ALTAMAR e meu objetivo é: ${objetivo}. Gostaria de conversar.`;
+        const urlWhatsApp = `https://wa.me/5511933838030?text=${encodeURIComponent(textoMensagem)}`;
+        
+        window.open(urlWhatsApp, '_blank');
+        
+        btn.innerHTML = originalText;
+        btn.disabled = false;
+        lucide.createIcons();
+        document.getElementById('leadForm').reset();
+      })
+      .catch(error => {
+        console.error(error);
+        const textoMensagem = `Olá! Meu nome é ${nome}. Sou profissional da saúde e gostaria de conversar sobre o meu projeto.`;
+        const urlWhatsApp = `https://wa.me/5511933838030?text=${encodeURIComponent(textoMensagem)}`;
+        window.open(urlWhatsApp, '_blank');
+        
+        btn.innerHTML = originalText;
+        btn.disabled = false;
+        lucide.createIcons();
+      });
+    });
+  </script>
+</body>
+</html>
