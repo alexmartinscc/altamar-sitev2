@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Consórcio para Casa Própria e Imóveis | ALTAMAR Consultoria</title>
-<meta name="description" content="Realize o sonho da casa própria com consórcio sem juros. Consultoria autorizada Ademicon. Planejamento seguro para famílias. Fale conosco." />
+  <meta name="description" content="Realize o sonho da casa própria com consórcio sem juros. Consultoria autorizada Ademicon. Planejamento seguro para famílias. Fale conosco." />
   
   <!-- FAVICON -->
   <link rel="icon" type="image/png" href="./favicon.png" />
@@ -64,7 +64,7 @@
   <header class="fixed inset-x-0 top-0 z-50 bg-surface/80 backdrop-blur-md border-b border-gray-100 transition-all">
     <div class="section-shell grid h-20 grid-cols-[minmax(0,1fr)_auto] items-center gap-4">
       
-      <a href="#" class="flex items-center gap-3 group">
+      <a href="/" class="flex items-center gap-3 group">
         <img src="./logo.png" alt="ALTAMAR Consultoria" width="40" height="40" class="h-10 w-10 object-contain" />
         <span class="flex flex-col leading-tight">
           <span class="font-display text-lg font-extrabold text-primary tracking-wide">ALTAMAR Consultoria</span>
@@ -220,7 +220,6 @@
               <p><strong>3. O custo.</strong> Diferente do financiamento, aqui não há juros. O custo do plano é apenas uma taxa de administração diluída no prazo.</p>
             </div>
 
-            <!-- BULLETS MOVIDOS PARA CIMA COM TÍTULO -->
             <div class="mt-8 mb-8">
               <h3 class="font-bold text-primary text-lg mb-4">O que você pode fazer com o consórcio:</h3>
               <div class="grid sm:grid-cols-2 gap-3">
@@ -243,12 +242,10 @@
               </div>
             </div>
 
-            <!-- QUADRO COMPARATIVO COM A Tabela Retrátil -->
             <div class="p-6 bg-surface rounded-2xl shadow-sm border border-gray-100">
               <h3 class="font-bold text-primary mb-2">Consórcio e financiamento: caminhos diferentes</h3>
               <p class="text-muted text-sm leading-relaxed mb-4">O financiamento atende a uma necessidade imediata. O consórcio é um caminho planejado, com custo previsível. O papel da ALTAMAR é mostrar qual faz mais sentido para o seu momento.</p>
               
-              <!-- Tabela Retrátil -->
               <details class="group mt-2">
                 <summary class="cursor-pointer text-accent font-bold text-sm flex items-center gap-2 hover:underline outline-none">
                   <i data-lucide="chevron-down" class="h-4 w-4 transition-transform group-open:rotate-180"></i>
@@ -301,7 +298,6 @@
               </a>
             </div>
           </div>
-
         </div>
       </div>
     </section>
@@ -522,7 +518,6 @@
           <p class="text-xl font-bold text-primary">Qual é o seu sonho? O próximo projeto pode ser o seu.</p>
         </div>
 
-        <!-- Roteador: A ALTAMAR também atende -->
         <div class="mt-20 pt-12 border-t border-gray-100 max-w-5xl mx-auto">
           <h3 class="text-center text-lg font-extrabold text-accent mb-8">A ALTAMAR também atende</h3>
           <div class="flex flex-col sm:flex-row justify-center gap-4">
@@ -631,10 +626,10 @@
   <!-- RODAPÉ -->
   <footer class="bg-primary-light border-t border-white/5 py-10 md:py-12">
     <div class="section-shell flex flex-col md:flex-row justify-between items-center gap-6 md:gap-8">
-      <div class="flex items-center gap-3">
+      <a href="/" class="flex items-center gap-3">
         <img src="./logo.png" alt="ALTAMAR" width="32" height="32" class="h-8 w-8 object-contain brightness-0 invert" />
         <span class="text-sm font-bold text-white">ALTAMAR Consultoria</span>
-      </div>
+      </a>
       <p class="text-xs text-gray-400 text-center md:text-right max-w-2xl leading-relaxed">
         <strong>Aviso de Conformidade Legal:</strong> A ALTAMAR atua na prestação de serviços de consultoria e planejamento de crédito como canal credenciado e consultoria autorizada Ademicon Administradora de Consórcios S.A. As operações e grupos de consórcio são de responsabilidade e custódia da Ademicon, instituição autorizada e fiscalizada pelo Banco Central do Brasil. A ALTAMAR não realiza captação direta de poupança pública.
         <br><br>
@@ -662,43 +657,47 @@
       const whatsapp = document.getElementById('whatsapp').value;
       const sonho = document.getElementById('sonho').value;
 
-      btn.innerHTML = '<i data-lucide="loader-2" class="h-5 w-5 animate-spin"></i> Preparando...';
+      // 1. Abre o WhatsApp imediatamente
+      const textoMensagem = `Olá! Meu nome é ${nome}. Vi o site da ALTAMAR e meu sonho é: ${sonho}. Meu WhatsApp é ${whatsapp}. Gostaria de conversar!`;
+      const urlWhatsApp = `https://wa.me/5511933838030?text=${encodeURIComponent(textoMensagem)}`;
+      window.open(urlWhatsApp, '_blank');
+
+      // 2. Prepara o botão visualmente
+      btn.innerHTML = '<i data-lucide="check-circle" class="h-5 w-5"></i> Redirecionando...';
       btn.disabled = true;
       lucide.createIcons();
+      
+      document.getElementById('leadForm').reset();
 
-      fetch("https://formsubmit.co/ajax/contato@altamarconsultoria.com.br", {
+      // 3. Envia o e-mail em segundo plano usando Web3Forms
+      const accessKey = "ec9f2d01-fd80-4192-9895-f674bc799a45"; 
+
+      fetch("https://api.web3forms.com/submit", {
         method: "POST",
         headers: { 
           'Content-Type': 'application/json',
           'Accept': 'application/json'
         },
         body: JSON.stringify({
+          access_key: accessKey,
+          subject: `🟢 Novo Lead (Site Principal): ${nome}`,
           Nome: nome,
           WhatsApp: whatsapp,
-          Sonho: sonho,
-          _subject: `🟢 Novo Lead (Site Principal): ${nome}`
+          Sonho: sonho
         })
       })
-      .then(() => {
-        const textoMensagem = `Olá! Meu nome é ${nome}. Vi o site da ALTAMAR e meu sonho é: ${sonho}. Meu WhatsApp é ${whatsapp}. Gostaria de conversar!`;
-        const urlWhatsApp = `https://wa.me/5511933838030?text=${encodeURIComponent(textoMensagem)}`;
-        
-        window.open(urlWhatsApp, '_blank');
-        
-        btn.innerHTML = originalText;
-        btn.disabled = false;
-        lucide.createIcons();
-        document.getElementById('leadForm').reset();
+      .then(response => {
+         if(!response.ok) console.log("Erro no envio do e-mail.");
       })
       .catch(error => {
-        console.error(error);
-        const textoMensagem = `Olá! Meu nome é ${nome}. Vi o site da ALTAMAR e meu sonho é ${sonho}. Gostaria de conversar!`;
-        const urlWhatsApp = `https://wa.me/5511933838030?text=${encodeURIComponent(textoMensagem)}`;
-        window.open(urlWhatsApp, '_blank');
-        
-        btn.innerHTML = originalText;
-        btn.disabled = false;
-        lucide.createIcons();
+         console.log("Erro de rede no envio do e-mail.");
+      })
+      .finally(() => {
+        setTimeout(() => {
+          btn.innerHTML = originalText;
+          btn.disabled = false;
+          lucide.createIcons();
+        }, 2000);
       });
     });
   </script>
