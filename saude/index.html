@@ -29,6 +29,7 @@
             'primary-light': '#1E293B',
             accent: '#C86A4C',
             'accent-hover': '#B55A3D',
+            gold: '#C5A059',
             bg: '#FAFAFA',
             surface: '#FFFFFF',
             text: '#334155',
@@ -84,6 +85,7 @@
   </header>
 
   <main>
+    <!-- BLOCO 1: HERO -->
     <section id="hero" class="relative isolate flex min-h-[90svh] items-center overflow-hidden pt-20">
       <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=2070&auto=format&fit=crop" alt="Médica em seu consultório" class="absolute inset-0 -z-20 h-full w-full object-cover object-right md:object-right" />
       
@@ -108,58 +110,242 @@
       </div>
     </section>
 
-    <section class="bg-surface py-20 lg:py-32">
+    <!-- BLOCO 2: DORES -->
+    <section class="bg-surface py-16 md:py-24 border-t border-gray-100">
       <div class="section-shell">
-        <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-          
-          <div>
-            <h2 class="text-3xl font-extrabold text-primary md:text-[2.75rem] font-display leading-[1.2]">
-              O desafio de quem vive da própria produtividade.
-            </h2>
-            <p class="mt-6 text-lg leading-relaxed text-text font-medium">
-              Entre atendimentos, gestão de equipe e a busca por atualização constante, sobra pouco tempo para pensar em como fazer o dinheiro conquistado hoje trabalhar pelo seu futuro. A rotina exige muito, e a transição de carreira ou a expansão da clínica demandam capital inteligente.
-            </p>
-            
-            <div class="mt-8 space-y-4">
-              <div class="flex items-start gap-4">
-                <div class="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-accent/10 text-accent"><i data-lucide="clock" class="h-5 w-5"></i></div>
-                <div>
-                  <h4 class="font-bold text-primary text-lg">Se a sua agenda para, a renda também para?</h4>
-                  <p class="text-muted text-sm mt-1">Construir outras fontes de receita (como imóveis para aluguel) é o caminho para a independência.</p>
-                </div>
-              </div>
-              <div class="flex items-start gap-4">
-                <div class="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-accent/10 text-accent"><i data-lucide="building-2" class="h-5 w-5"></i></div>
-                <div>
-                  <h4 class="font-bold text-primary text-lg">Expansão sem sufocar o caixa.</h4>
-                  <p class="text-muted text-sm mt-1">Nova sala, equipamentos de ponta ou uma nova unidade não precisam esvaziar suas reservas.</p>
-                </div>
-              </div>
-              <div class="flex items-start gap-4">
-                <div class="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-accent/10 text-accent"><i data-lucide="trending-up" class="h-5 w-5"></i></div>
-                <div>
-                  <h4 class="font-bold text-primary text-lg">Seu capital pode render mais.</h4>
-                  <p class="text-muted text-sm mt-1">Use seu bom nome e capacidade de poupança para alavancar projetos com custo previsível.</p>
-                </div>
-              </div>
+        <div class="max-w-3xl mx-auto text-center mb-12">
+          <h2 class="text-3xl font-extrabold text-primary md:text-[2.75rem] font-display leading-[1.2]">
+            O desafio de quem vive da própria produtividade.
+          </h2>
+          <p class="mt-4 text-lg leading-relaxed text-text font-medium">
+            Entre atendimentos, gestão de equipe e a busca por atualização constante, sobra pouco tempo para pensar em como fazer o dinheiro conquistado hoje trabalhar pelo seu futuro. O crédito planejado surge como uma <strong class="text-primary font-bold">solução inteligente</strong> para viabilizar projetos, preservando a liquidez.
+          </p>
+        </div>
+
+        <div class="max-w-4xl mx-auto bg-bg rounded-3xl shadow-soft border border-gray-100 overflow-hidden">
+          <div class="hidden md:grid grid-cols-2 bg-primary-light text-white">
+            <div class="p-4 md:p-6 border-b md:border-b-0 md:border-r border-white/10 flex items-center gap-3">
+              <i data-lucide="alert-circle" class="h-5 w-5 text-gray-400"></i>
+              <h3 class="font-bold text-lg font-display">Desafios Comuns</h3>
+            </div>
+            <div class="p-4 md:p-6 flex items-center gap-3 bg-primary">
+              <i data-lucide="check-circle-2" class="h-5 w-5 text-accent"></i>
+              <h3 class="font-bold text-lg font-display text-accent">A Solução com Consórcio</h3>
             </div>
           </div>
 
-          <div class="relative hidden lg:block">
-            <div class="absolute inset-0 bg-primary rounded-[3rem] -rotate-3 scale-105 opacity-5"></div>
-            <img src="./medico-desafio.jpg" alt="Médico administrando seu consultório pelo notebook" class="relative rounded-[2rem] shadow-float object-cover w-full h-[500px]" />
-            
-            <div class="absolute -bottom-6 -left-6 bg-surface p-6 rounded-2xl shadow-soft max-w-[300px] border border-gray-100">
-              <p class="text-sm font-medium text-primary leading-relaxed">
-                "O tempo que você leva para decidir é o tempo que seu dinheiro deixa de trabalhar por você."
-              </p>
+          <div class="divide-y divide-gray-100">
+            <!-- Linha 1 -->
+            <div class="grid grid-cols-1 md:grid-cols-2 group hover:bg-white transition-colors">
+              <div class="p-5 md:p-6 border-b md:border-b-0 md:border-r border-gray-100 bg-white">
+                <div class="flex items-center gap-2 mb-2 md:hidden">
+                  <i data-lucide="alert-circle" class="h-4 w-4 text-red-400"></i>
+                  <span class="text-xs font-bold uppercase text-muted">Desafio</span>
+                </div>
+                <h4 class="font-bold text-text mb-1">Comprar à vista encolhe o caixa</h4>
+                <p class="text-sm text-muted leading-relaxed">Usar o dinheiro da própria reserva para comprar equipamentos caros ou reformar a clínica tira a liquidez do seu dia a dia.</p>
+              </div>
+              <div class="p-5 md:p-6 bg-accent/5 relative">
+                <div class="absolute -top-3 left-1/2 -translate-x-1/2 md:hidden bg-accent text-white p-1 rounded-full z-10">
+                  <i data-lucide="arrow-down" class="h-4 w-4"></i>
+                </div>
+                <div class="flex items-center gap-2 mb-2 md:hidden">
+                  <i data-lucide="check-circle" class="h-4 w-4 text-accent"></i>
+                  <span class="text-xs font-bold uppercase text-accent">Solução</span>
+                </div>
+                <h4 class="font-bold text-primary mb-1 flex items-center gap-2"><i data-lucide="check" class="h-4 w-4 text-accent hidden md:block"></i> Crescimento sem parcelas pesadas</h4>
+                <p class="text-sm text-muted leading-relaxed">O consórcio permite que você faça investimentos estruturados sem precisar dar entradas altas, preservando o caixa do seu negócio.</p>
+              </div>
+            </div>
+
+            <!-- Linha 2 -->
+            <div class="grid grid-cols-1 md:grid-cols-2 group hover:bg-white transition-colors">
+              <div class="p-5 md:p-6 border-b md:border-b-0 md:border-r border-gray-100 bg-white">
+                <div class="flex items-center gap-2 mb-2 md:hidden">
+                  <i data-lucide="alert-circle" class="h-4 w-4 text-red-400"></i>
+                  <span class="text-xs font-bold uppercase text-muted">Desafio</span>
+                </div>
+                <h4 class="font-bold text-text mb-1">Juros altos do financiamento</h4>
+                <p class="text-sm text-muted leading-relaxed">Linhas de crédito tradicionais ou leasing bancário cobram taxas que pesam no orçamento e dobram o custo final do bem.</p>
+              </div>
+              <div class="p-5 md:p-6 bg-accent/5 relative">
+                <div class="absolute -top-3 left-1/2 -translate-x-1/2 md:hidden bg-accent text-white p-1 rounded-full z-10">
+                  <i data-lucide="arrow-down" class="h-4 w-4"></i>
+                </div>
+                <div class="flex items-center gap-2 mb-2 md:hidden">
+                  <i data-lucide="check-circle" class="h-4 w-4 text-accent"></i>
+                  <span class="text-xs font-bold uppercase text-accent">Solução</span>
+                </div>
+                <h4 class="font-bold text-primary mb-1 flex items-center gap-2"><i data-lucide="check" class="h-4 w-4 text-accent hidden md:block"></i> Custo fixo e previsível</h4>
+                <p class="text-sm text-muted leading-relaxed">Aqui não existem juros compostos. Você paga apenas uma taxa de administração fixa e diluída ao longo de todo o plano.</p>
+              </div>
+            </div>
+
+            <!-- Linha 3 -->
+            <div class="grid grid-cols-1 md:grid-cols-2 group hover:bg-white transition-colors">
+              <div class="p-5 md:p-6 border-b md:border-b-0 md:border-r border-gray-100 bg-white">
+                <div class="flex items-center gap-2 mb-2 md:hidden">
+                  <i data-lucide="alert-circle" class="h-4 w-4 text-red-400"></i>
+                  <span class="text-xs font-bold uppercase text-muted">Desafio</span>
+                </div>
+                <h4 class="font-bold text-text mb-1">Depender apenas dos atendimentos</h4>
+                <p class="text-sm text-muted leading-relaxed">Sua receita atual está muito ligada ao número de consultas e procedimentos que você consegue realizar fisicamente na semana.</p>
+              </div>
+              <div class="p-5 md:p-6 bg-accent/5 relative">
+                <div class="absolute -top-3 left-1/2 -translate-x-1/2 md:hidden bg-accent text-white p-1 rounded-full z-10">
+                  <i data-lucide="arrow-down" class="h-4 w-4"></i>
+                </div>
+                <div class="flex items-center gap-2 mb-2 md:hidden">
+                  <i data-lucide="check-circle" class="h-4 w-4 text-accent"></i>
+                  <span class="text-xs font-bold uppercase text-accent">Solução</span>
+                </div>
+                <h4 class="font-bold text-primary mb-1 flex items-center gap-2"><i data-lucide="check" class="h-4 w-4 text-accent hidden md:block"></i> Construção de patrimônio e renda</h4>
+                <p class="text-sm text-muted leading-relaxed">Uma estratégia inteligente para comprar salas ou imóveis comerciais que geram aluguel e trazem mais estabilidade financeira a longo prazo.</p>
+              </div>
+            </div>
+
+            <!-- Linha 4 -->
+            <div class="grid grid-cols-1 md:grid-cols-2 group hover:bg-white transition-colors">
+              <div class="p-5 md:p-6 border-b md:border-b-0 md:border-r border-gray-100 bg-white">
+                <div class="flex items-center gap-2 mb-2 md:hidden">
+                  <i data-lucide="alert-circle" class="h-4 w-4 text-red-400"></i>
+                  <span class="text-xs font-bold uppercase text-muted">Desafio</span>
+                </div>
+                <h4 class="font-bold text-text mb-1">Falta de margem com fornecedores</h4>
+                <p class="text-sm text-muted leading-relaxed">Comprar parcelado direto com fabricantes de tecnologia ou equipamentos médicos limita o seu poder de barganha.</p>
+              </div>
+              <div class="p-5 md:p-6 bg-accent/5 relative">
+                <div class="absolute -top-3 left-1/2 -translate-x-1/2 md:hidden bg-accent text-white p-1 rounded-full z-10">
+                  <i data-lucide="arrow-down" class="h-4 w-4"></i>
+                </div>
+                <div class="flex items-center gap-2 mb-2 md:hidden">
+                  <i data-lucide="check-circle" class="h-4 w-4 text-accent"></i>
+                  <span class="text-xs font-bold uppercase text-accent">Solução</span>
+                </div>
+                <h4 class="font-bold text-primary mb-1 flex items-center gap-2"><i data-lucide="check" class="h-4 w-4 text-accent hidden md:block"></i> Poder de compra à vista</h4>
+                <p class="text-sm text-muted leading-relaxed">Com a carta de crédito na mão, você negocia descontos agressivos na hora de fechar contratos de maquinários, móveis ou reformas.</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="bg-bg py-20 lg:py-32 border-t border-gray-100">
+    <!-- BLOCO 3: COMO FUNCIONA O CONSÓRCIO -->
+    <section class="bg-bg py-16 md:py-24 overflow-hidden border-t border-gray-100">
+      <div class="section-shell">
+        <div class="grid lg:grid-cols-12 gap-12 items-center">
+          
+          <div class="lg:col-span-5 order-2 lg:order-1 relative">
+             <img src="./medico-desafio.jpg" alt="Médico administrando consultório" class="rounded-3xl shadow-soft object-cover w-full h-[400px] lg:h-[550px]" />
+          </div>
+
+          <div class="lg:col-span-7 order-1 lg:order-2 lg:pl-10">
+            <h2 class="text-3xl font-extrabold text-primary md:text-[2.75rem] font-display leading-[1.2]">
+              Como funciona o consórcio.
+            </h2>
+            
+            <div class="mt-8 space-y-6 text-lg text-text leading-relaxed font-medium">
+              <p><strong>1. União de recursos.</strong> Um grupo de pessoas se reúne para formar uma poupança coletiva. Todo mês, cada participante paga uma parcela que cabe no seu bolso, sem juros.</p>
+              <p><strong>2. A contemplação.</strong> Todos os meses, um ou mais participantes são contemplados — por sorteio ou por lance — e recebem o valor para realizar a <strong>compra à vista</strong>.</p>
+              <p><strong>3. O custo.</strong> Diferente do financiamento, aqui não há juros. O custo do plano é apenas uma taxa de administração diluída no prazo.</p>
+            </div>
+
+            <div class="mt-8 mb-8">
+              <h3 class="font-bold text-primary text-lg mb-4">O que você pode fazer com o consórcio:</h3>
+              <div class="grid sm:grid-cols-2 gap-3">
+                <div class="flex items-center gap-3">
+                  <i data-lucide="check-circle" class="h-5 w-5 text-accent shrink-0"></i>
+                  <span class="font-semibold text-primary text-sm">Compra de sala comercial ou consultório</span>
+                </div>
+                <div class="flex items-center gap-3">
+                  <i data-lucide="check-circle" class="h-5 w-5 text-accent shrink-0"></i>
+                  <span class="font-semibold text-primary text-sm">Aquisição de equipamentos e tecnologia</span>
+                </div>
+                <div class="flex items-center gap-3">
+                  <i data-lucide="check-circle" class="h-5 w-5 text-accent shrink-0"></i>
+                  <span class="font-semibold text-primary text-sm">Construção ou reforma da clínica</span>
+                </div>
+                <div class="flex items-center gap-3">
+                  <i data-lucide="check-circle" class="h-5 w-5 text-accent shrink-0"></i>
+                  <span class="font-semibold text-primary text-sm">Veículos e frotas</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Acordeão Comparativo com Destaque -->
+            <div class="bg-surface rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
+              <details class="group">
+                <summary class="flex items-center justify-between cursor-pointer p-5 md:p-6 bg-accent/5 hover:bg-accent/10 transition-colors outline-none">
+                  <div class="flex items-center gap-3">
+                    <div class="bg-accent/10 p-2 rounded-full hidden sm:block">
+                      <i data-lucide="bar-chart-3" class="h-5 w-5 text-accent"></i>
+                    </div>
+                    <h3 class="font-bold text-accent text-lg md:text-xl">Veja uma comparação de consórcio vs financiamento</h3>
+                  </div>
+                  <span class="bg-accent text-white p-1.5 rounded-full shrink-0 group-open:rotate-180 transition-transform">
+                    <i data-lucide="chevron-down" class="h-5 w-5"></i>
+                  </span>
+                </summary>
+                
+                <div class="p-5 md:p-6 border-t border-gray-100">
+                  <p class="text-muted text-sm leading-relaxed mb-4">O financiamento atende a uma necessidade imediata. O consórcio é um caminho planejado, com custo previsível. O papel da ALTAMAR é mostrar qual faz mais sentido para o seu momento.</p>
+                  
+                  <!-- Título da Simulação Adicionado -->
+                  <div class="mb-4">
+                    <h4 class="font-bold text-primary text-base md:text-lg">Simulação Comparativa: Crédito de R$ 1 Milhão</h4>
+                  </div>
+
+                  <div class="overflow-x-auto rounded-xl border border-gray-200">
+                    <table class="w-full text-left text-sm text-text">
+                      <thead class="bg-gray-50 text-xs uppercase text-muted border-b border-gray-200">
+                        <tr>
+                          <th class="px-4 py-3 font-bold">Critério Analisado</th>
+                          <th class="px-4 py-3 font-bold text-primary">Consórcio Planejado</th>
+                          <th class="px-4 py-3 font-bold text-gray-500">Financiamento Bancário</th>
+                        </tr>
+                      </thead>
+                      <tbody class="divide-y divide-gray-100 bg-white">
+                        <tr class="hover:bg-gray-50">
+                          <td class="px-4 py-3 font-medium">Valor da Entrada</td>
+                          <td class="px-4 py-3 font-bold text-primary">R$ 0,00</td>
+                          <td class="px-4 py-3">R$ 200.000,00 (20%)</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                          <td class="px-4 py-3 font-medium">Prazo de Pagamento</td>
+                          <td class="px-4 py-3">220 meses (Aprox. 18 anos)</td>
+                          <td class="px-4 py-3">420 meses (35 anos)</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                          <td class="px-4 py-3 font-medium">Taxa do Contrato</td>
+                          <td class="px-4 py-3">24,3% de taxa de administração (total)</td>
+                          <td class="px-4 py-3">12% de juros ao ano (compostos)</td>
+                        </tr>
+                        <tr class="bg-primary/5">
+                          <td class="px-4 py-4 font-bold text-primary">Custo total de taxas / juros</td>
+                          <td class="px-4 py-4 font-bold text-primary text-base">R$ 243.000,00</td>
+                          <td class="px-4 py-4 font-bold text-gray-500 text-base">Cerca de R$ 2.105.000,00*</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <p class="mt-3 text-[10px] text-muted">*Simulação baseada em um crédito de R$ 1.000.000,00. Valores aproximados para fins ilustrativos.</p>
+                </div>
+              </details>
+            </div>
+
+            <div class="mt-10">
+              <a href="#contato" class="inline-flex items-center justify-center rounded-xl bg-accent px-8 py-4 text-base font-bold text-white hover:bg-accent-hover transition-all hover:-translate-y-1 shadow-lg shadow-accent/20">
+                Quero realizar meu projeto!
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOCO 4: ESTRATÉGIAS (Fundo alterado para bg-surface para contraste) -->
+    <section class="bg-surface py-20 lg:py-32 border-t border-gray-100">
       <div class="section-shell">
         <div class="text-center max-w-2xl mx-auto mb-16">
           <h2 class="text-3xl font-extrabold text-primary md:text-[2.75rem] font-display">
@@ -169,7 +355,7 @@
         </div>
 
         <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-          <div class="bg-surface p-8 rounded-3xl shadow-sm border border-gray-100 hover:shadow-float transition-all duration-300">
+          <div class="bg-bg p-8 rounded-3xl shadow-sm border border-gray-100 hover:shadow-float transition-all duration-300">
             <i data-lucide="stethoscope" class="h-8 w-8 text-accent mb-4"></i>
             <h3 class="text-2xl font-bold text-primary mb-2">Expansão e Estrutura</h3>
             <p class="text-muted leading-relaxed mb-6">Para quem precisa de capital ágil sem comprometer a operação diária.</p>
@@ -181,7 +367,7 @@
             </ul>
           </div>
 
-          <div class="bg-surface p-8 rounded-3xl shadow-sm border border-gray-100 hover:shadow-float transition-all duration-300">
+          <div class="bg-bg p-8 rounded-3xl shadow-sm border border-gray-100 hover:shadow-float transition-all duration-300">
             <i data-lucide="landmark" class="h-8 w-8 text-accent mb-4"></i>
             <h3 class="text-2xl font-bold text-primary mb-2">Patrimônio e Renda</h3>
             <p class="text-muted leading-relaxed mb-6">Para quem quer parar de depender exclusivamente do próprio esforço físico.</p>
@@ -193,9 +379,32 @@
             </ul>
           </div>
         </div>
+
+        <!-- Novos Bullets Dourados -->
+        <div class="mt-12 max-w-5xl mx-auto">
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+            <div class="flex flex-col items-center text-center bg-bg p-6 rounded-2xl border border-gray-100 shadow-sm">
+              <i data-lucide="gem" class="h-6 w-6 text-gold mb-3"></i>
+              <span class="font-bold text-primary text-sm">Formação de renda passiva</span>
+            </div>
+            <div class="flex flex-col items-center text-center bg-bg p-6 rounded-2xl border border-gray-100 shadow-sm">
+              <i data-lucide="line-chart" class="h-6 w-6 text-gold mb-3"></i>
+              <span class="font-bold text-primary text-sm">Alavancagem programada</span>
+            </div>
+            <div class="flex flex-col items-center text-center bg-bg p-6 rounded-2xl border border-gray-100 shadow-sm">
+              <i data-lucide="cpu" class="h-6 w-6 text-gold mb-3"></i>
+              <span class="font-bold text-primary text-sm">Renovação tecnológica</span>
+            </div>
+            <div class="flex flex-col items-center text-center bg-bg p-6 rounded-2xl border border-gray-100 shadow-sm">
+              <i data-lucide="shield-check" class="h-6 w-6 text-gold mb-3"></i>
+              <span class="font-bold text-primary text-sm">Baixa descapitalização</span>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
+    <!-- BLOCO 5: MÉTODO MAPA -->
     <section class="bg-primary py-16 md:py-32 text-white relative overflow-hidden">
       <div class="absolute top-0 right-0 w-1/2 h-full bg-primary-light/50 transform -skew-x-12 translate-x-32 hidden lg:block"></div>
 
@@ -253,6 +462,7 @@
       </div>
     </section>
 
+    <!-- BLOCO 6: PROVA SOCIAL E FAQ -->
     <section class="bg-surface py-16 md:py-32">
       <div class="section-shell">
         <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 max-w-6xl mx-auto">
@@ -296,6 +506,16 @@
                 <p class="mt-2 md:mt-4 text-muted text-sm md:text-base leading-relaxed">Sim. Existem modalidades de consórcio para bens móveis que permitem a compra de equipamentos, máquinas e veículos de forma planejada e sem juros.</p>
               </details>
 
+              <!-- Nova Pergunta Adicionada -->
+              <details class="group bg-bg rounded-2xl p-4 md:p-5 hover:bg-gray-50 transition-colors">
+                <summary class="flex cursor-pointer items-center justify-between font-bold text-primary outline-none py-3">
+                  <span class="pr-4 text-base md:text-lg">Consórcio demora muito para contemplar?</span>
+                  <i data-lucide="plus" class="h-5 w-5 text-accent group-open:hidden shrink-0"></i>
+                  <i data-lucide="minus" class="hidden h-5 w-5 text-accent group-open:block shrink-0"></i>
+                </summary>
+                <p class="mt-2 md:mt-4 text-muted text-sm md:text-base leading-relaxed">O consórcio possibilita atendimento de necessidades de curto, médio e longo prazo. Durante a reunião entenderemos seus objetivos e explicaremos os caminhos disponíveis.</p>
+              </details>
+
               <details class="group bg-bg rounded-2xl p-4 md:p-5 hover:bg-gray-50 transition-colors">
                 <summary class="flex cursor-pointer items-center justify-between font-bold text-primary outline-none py-3">
                   <span class="pr-4 text-base md:text-lg">A ALTAMAR cobra pela consultoria?</span>
@@ -310,6 +530,7 @@
       </div>
     </section>
 
+    <!-- BLOCO 7: CTA FINAL -->
     <section id="contato" class="bg-primary py-16 md:py-32">
       <div class="section-shell">
         <div class="grid lg:grid-cols-[1fr_450px] gap-12 lg:gap-16 max-w-6xl mx-auto items-center">
@@ -367,6 +588,7 @@
     </section>
   </main>
 
+  <!-- RODAPÉ -->
   <footer class="bg-primary-light border-t border-white/5 py-10 md:py-12">
     <div class="section-shell flex flex-col md:flex-row justify-between items-center gap-6 md:gap-8">
       <a href="/" class="flex items-center gap-3">
@@ -381,6 +603,7 @@
     </div>
   </footer>
 
+  <!-- SCRIPTS -->
   <script>
     lucide.createIcons();
 
